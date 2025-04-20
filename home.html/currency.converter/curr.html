@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./curr.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body >
+    <img class ="logo" src="https://media.istockphoto.com/id/1210336842/photo/black-singapore-dollar-sign.jpg?s=612x612&w=0&k=20&c=TU5YrnHGXr6sdgey2gBbRra4689l8BAfK7dBH74YeqU=">
+
+    <h2 class="heading" > Smart Exchange Hub</h2>
+    
+<div class="container">
+    <h2>Currency Converter</h2>
+    <form>
+        <div class="amount">
+            <p>Enter amount</p>
+            <input value="1000000000000" type="text">
+        </div>
+        <div class="dropdown">
+            <div class="from">
+                <p>From</p>
+                <div class="select-container">
+                    <img src="https://flagsapi.com/US/shiny/64.png">
+                    <select name="from">
+                        <option value="usd">USD</option>
+                        <option value="inr">INR</option>
+                        <option value="aud">AUD</option>
+                        <option value="eur">EUR</option>
+                    </select>
+                </div>
+            </div>
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <div class="to">
+                <p>To</p>
+                <div class="select-container">
+                    <img src="https://flagsapi.com/IN/shiny/64.png">
+                    <select name="to"> <!-- Changed name="from" to name="to" -->
+                        <option value="usd">USD</option>
+                        <option value="inr" selected>INR</option>
+                        <option value="aud">AUD</option>
+                        <option value="eur">EUR</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="msg">1USD = 80INR</div>
+        <button>Get Exchange Rate</button>
+    </form>
+</div>
+
+<!-- <input type="text">gaurav -->
+
+<script src="./curr.js"></script>
+<script src="./code.js" ></script>
+</body>
+</html>
